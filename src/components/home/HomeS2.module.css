@@ -12,10 +12,10 @@
 }
 
 .hero {
-  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
   text-align: right;
+  max-width: 1170px;
 }
 
 /* Hero */
@@ -181,7 +181,15 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
+  .heroContent h1 {
+    margin: 0;
+  }
+
+  .heroContent p {
+    margin: 10px 0 0 0;
+  }
+
   .productsContainer {
     flex-direction: column;
     align-items: center;

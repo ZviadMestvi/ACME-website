@@ -121,7 +121,7 @@
 
   .boxesContainer {
     flex-direction: column;
-    width: 82%;
+    width: 78%;
   }
 
   .boxesContainer div {
@@ -132,7 +132,7 @@
   .bgImage {
     left: 0;
     top: 0;
-    height: 350px;
+    height: 340px;
     width: 100%;
     position: relative;
     background-position: 0 0, 50% 35%;

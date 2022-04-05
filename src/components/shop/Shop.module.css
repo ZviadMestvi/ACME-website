@@ -137,6 +137,14 @@
 }
 
 @media (max-width: 768px) {
+  .headingContainer {
+    padding: 0 15px;
+  }
+
+  .headingContainer h1 {
+    font-size: 2.2rem;
+  }
+
   .productsContainer {
     margin: 0;
     grid-template-columns: 1fr;

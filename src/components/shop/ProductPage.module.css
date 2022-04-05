@@ -118,6 +118,14 @@
 }
 
 @media (max-width: 768px) {
+  .headingContainer {
+    padding: 0 15px;
+  }
+
+  .headingContainer h1 {
+    font-size: 2.2rem;
+  }
+
   .productHeader {
     padding: 30px 15px;
   }
