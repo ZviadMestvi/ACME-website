@@ -1,0 +1,52 @@
+.mainContainer {
+  padding: 12px 0;
+  width: 100%;
+  color: #333;
+}
+
+.productContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoContainer {
+  display: flex;
+}
+
+.productImage {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+
+.productName {
+  margin: 0 16px;
+}
+
+.productName h4,
+.productName p {
+  line-height: 24px;
+  margin: 0;
+}
+
+.inputContainer input {
+  font-family: 'Sen', sans-serif;
+  font-size: 1rem;
+  background-color: #fafafa;
+  padding: 8px 6px 8px 12px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin-right: 5px;
+  outline: 0;
+  height: 20px;
+  width: 40px;
+}
+
+.removeBtn {
+  line-height: 24px;
+  text-decoration: underline #eb5757;
+  padding-left: 76px;
+  margin-top: 5px;
+  cursor: pointer;
+  color: #eb5757;
+}

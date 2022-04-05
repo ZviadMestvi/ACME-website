@@ -1,0 +1,140 @@
+.productHeader {
+  background-color: #222222;
+}
+
+.headingContainer {
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 1170px;
+}
+
+.headingContainer h1 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 44px;
+  margin-top: 10px;
+  color: #f9f9f9;
+}
+
+/* Product section */
+
+.mainContaienr {
+  display: flex;
+  margin: 0 auto;
+  padding: 65px 15px;
+  max-width: 1170px;
+}
+
+.imageContainer {
+  width: 46%;
+}
+
+.image {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.infoContainer {
+  width: 64%;
+  padding-left: 60px;
+  color: #333;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.price {
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.infoContainer form div {
+  margin-top: 15px;
+}
+
+.infoContainer input {
+  font-family: 'Sen', sans-serif;
+  font-size: 1rem;
+  background-color: #fafafa;
+  padding: 8px 6px 8px 12px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin-right: 5px;
+  outline: 0;
+  height: 20px;
+  width: 40px;
+  color: #333;
+}
+
+.infoContainer input:hover,
+.infoContainer input:focus {
+  border: 1px solid #eb5757;
+}
+
+.infoContainer button {
+  padding: 6.5px 25px 5.5px 25px;
+  font-size: 1rem;
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: transparent;
+  border: 1px solid #eb5757;
+  border-radius: 5px;
+  color: #eb5757;
+}
+
+.infoContainer button:hover {
+  transition: 300ms ease;
+  background-color: #eb5757;
+  cursor: pointer;
+  color: white;
+}
+
+.textContainer {
+  font-family: 'Sen', sans-serif;
+  color: #333;
+}
+
+.textContainer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 36px;
+  margin: 34px 0 10px 0;
+}
+
+.textContainer p {
+  margin-bottom: 10px;
+}
+
+.textContainer h4 {
+  font-size: 1.125rem;
+  line-height: 24px;
+}
+
+@media (max-width: 768px) {
+  .productHeader {
+    padding: 30px 15px;
+  }
+
+  .imageContainer,
+  .image {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .mainContaienr {
+    flex-direction: column;
+    padding: 65px 15px;
+  }
+
+  .infoContainer {
+    padding: 0;
+    width: 100%;
+  }
+}

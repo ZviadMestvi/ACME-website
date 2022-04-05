@@ -1,0 +1,146 @@
+.wrapper {
+  background-color: #222;
+  position: relative;
+}
+
+.sectionContainer {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  color: #f9f9f9;
+  position: relative;
+  z-index: 50;
+}
+
+.sectionContainer h1 {
+  font-size: 2.375rem;
+  line-height: 44px;
+  padding-top: 55px;
+}
+
+.boxesContainer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 65px;
+  width: 63%;
+  color: #222;
+}
+
+.boxesContainer div {
+  min-height: 270px;
+  border-radius: 5px;
+  margin: 25px 20px 0 0;
+  background-color: #f9f9f9;
+  padding: 40px;
+  width: 40%;
+}
+
+.boxesContainer img {
+  margin-bottom: 30px;
+}
+
+.boxesContainer h2 {
+  font-size: 2rem;
+  line-height: 36px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.boxesContainer p {
+  margin-bottom: 10px;
+}
+
+.boxesContainer button {
+  padding: 5px 25px;
+  font-size: 1rem;
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #eb5757;
+  border: 1px solid #eb5757;
+  border-radius: 5px;
+  color: #f9f9f9;
+}
+
+.boxesContainer button:hover {
+  transition: all 300ms ease;
+  border: 1px solid #222;
+  background-color: #222;
+  cursor: pointer;
+}
+
+.bgImage {
+  height: 100%;
+  width: 40%;
+  background-image: linear-gradient(
+      90deg,
+      rgb(34, 34, 34),
+      rgba(34, 34, 34, 0.18) 76%
+    ),
+    url(../../assets/contact/image.jpg);
+  background-position: 0 0, 50% 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  z-index: 49;
+}
+
+@media (max-width: 990px) {
+  .boxesContainer {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .boxesContainer div {
+    margin: 25px 0 0 0;
+    width: 38.5%;
+  }
+
+  .bgImage {
+    left: 0;
+    top: 0;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    background-position: 0 0, 50% 35%;
+    background-image: linear-gradient(
+        0deg,
+        rgb(34, 34, 34),
+        rgba(34, 34, 34, 0.18) 76%
+      ),
+      url(../../assets/contact/image.jpg);
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    padding: 0 15px;
+  }
+
+  .boxesContainer {
+    flex-direction: column;
+    width: 82%;
+  }
+
+  .boxesContainer div {
+    margin: 25px 0 0 0;
+    width: 100%;
+  }
+
+  .bgImage {
+    left: 0;
+    top: 0;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    background-position: 0 0, 50% 35%;
+    background-image: linear-gradient(
+        0deg,
+        rgb(34, 34, 34),
+        rgba(34, 34, 34, 0.18) 76%
+      ),
+      url(../../assets/contact/image.jpg);
+  }
+}

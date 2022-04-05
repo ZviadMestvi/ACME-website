@@ -1,0 +1,144 @@
+.shopHeader {
+  background-color: #222222;
+}
+
+.headingContainer {
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 1170px;
+}
+
+.headingContainer h1 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 44px;
+  margin-top: 10px;
+  color: #f9f9f9;
+}
+
+/* Section */
+
+.mainContainer {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 65px 15px;
+}
+
+.featuredItem {
+  min-height: 250px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #f9f9f9;
+}
+
+.featuredItem:hover,
+.featuredItem button:hover,
+.productImage:hover {
+  cursor: pointer;
+}
+
+.featuredItem button {
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border: 0;
+  font-family: 'Sen', sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  margin-right: 10px;
+  padding: 5px 20px;
+  position: absolute;
+  right: 1%;
+  top: 8%;
+  color: #222;
+}
+
+.featuredItem div {
+  position: absolute;
+  left: 2%;
+  bottom: 6%;
+}
+
+.featuredItem h3 {
+  font-size: 1.5rem;
+  line-height: 30px;
+  margin: 10px 0 5px 0;
+}
+
+/* Products section */
+
+.productsSection {
+  display: flex;
+  padding: 65px 0;
+}
+
+.productsContainer {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  width: 90%;
+}
+
+.categoriesContainer {
+  padding-right: 25px;
+  width: 20%;
+}
+
+.categoriesContainer h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #333;
+}
+
+.category {
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px 25px;
+  line-height: 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.category:hover {
+  transition: 300ms ease;
+  background-color: #222;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  .shopHeader {
+    padding: 30px 15px;
+  }
+
+  .mainContainer {
+    padding: 65px 15px;
+  }
+
+  .productsSection {
+    flex-direction: column;
+  }
+
+  .categoriesContainer {
+    width: 97%;
+  }
+
+  .productsContainer {
+    margin-top: 25px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .productsContainer {
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+}

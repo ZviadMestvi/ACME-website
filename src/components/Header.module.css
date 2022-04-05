@@ -1,0 +1,263 @@
+.headerContainer {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.announcementContainer {
+  text-align: center;
+  font-family: 'Sen', sans-serif;
+  padding: 20px 0;
+  background-color: #222222;
+  color: #f9f9f9;
+}
+
+.announcementContainer div {
+  display: inline-block;
+}
+
+.announcement {
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #eb5757;
+}
+
+.announcementContainer p {
+  font-size: 1.125rem;
+}
+
+.header {
+  background-color: #eb5757;
+  padding: 14px 15px;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.logoContainer {
+  margin-top: 8px;
+}
+
+.headerMenuContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headerMenuContainer ul {
+  margin: 0;
+}
+
+.headerMenuContainer ul li {
+  display: inline-block;
+  font-family: 'Sen', sans-serif;
+  padding: 4px 10px;
+  margin: 0 1.25rem;
+}
+
+.headerMenuContainer ul li:hover {
+  transition: all 300ms ease;
+  border-radius: 5px;
+  background-color: #222222;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.cartIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 50px;
+  border-radius: 5px;
+  background-color: #222222;
+  position: relative;
+}
+
+.cartIconContainer span {
+  position: absolute;
+  font-size: 0.6875rem; /* 11px */
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  height: 14px;
+  width: 6px;
+  right: -7px;
+  top: -7px;
+}
+
+.cartIconContainer img {
+  height: 20px;
+  width: 20px;
+}
+
+.cartHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.cartHeader h4 {
+  font-size: 1.125rem;
+  line-height: 24px;
+  margin: 0;
+}
+
+/* Cart */
+
+.openCart {
+  animation: openCart 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.closeCart {
+  animation: closeCart 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.sideCart {
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  width: 480px;
+  right: 0;
+  top: 0;
+  z-index: 1002;
+}
+
+.closeBtn {
+  height: 25px;
+  width: 25px;
+}
+
+.noItems {
+  margin-top: 77%;
+  text-align: center;
+  color: #333;
+}
+
+.cartProductsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 24px;
+}
+
+#hamburgerMenu {
+  display: none;
+  height: 18px;
+  width: 18px;
+  filter: invert(1);
+  margin: 5px 0 0 21px;
+  cursor: pointer;
+}
+
+/* Check out  */
+
+.checkoutContainer {
+  padding: 16px 24px 24px;
+  border-top: 1px solid #e6e6e6;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+
+.subtotalContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.checkoutContainer button {
+  padding: 5px 25px;
+  font-size: 1rem;
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #eb5757;
+  background-color: #eb5757;
+  width: 100%;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1001;
+}
+
+/* Hamburger menu */
+
+.hamburgerContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #eb5757;
+  z-index: 1002;
+}
+
+.cartIconContainer:hover,
+.announcement:hover,
+.logoContainer img:hover,
+.closeBtn,
+.checkoutContainer button {
+  cursor: pointer;
+}
+
+@keyframes openCart {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes closeCart {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 990px) {
+  .header {
+    padding: 27px 35px 27px 25px;
+  }
+
+  .headerMenuContainer ul {
+    display: none;
+  }
+
+  .hamburgerContainer {
+    position: fixed;
+    width: 100vw;
+  }
+
+  #hamburgerMenu {
+    display: block;
+  }
+}

@@ -1,0 +1,129 @@
+.mainContainer {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0 45px 0;
+}
+
+.headingContaienr {
+  margin-top: 12px;
+}
+
+.headingContaienr p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.headingContaienr h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: -6px 0 0 0;
+}
+
+.textContainer {
+  width: 45%;
+}
+
+.boxesContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxContainer {
+  max-width: 352px;
+  width: 33%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 348px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #222222;
+  overflow: hidden;
+  color: #f9f9f9;
+}
+
+.box p {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.box h1 {
+  font-size: 1em;
+  text-align: center;
+}
+
+.box img {
+  position: absolute;
+  bottom: -25%;
+  right: -25%;
+}
+
+#triangle {
+  bottom: -17%;
+  right: -10%;
+}
+
+#square {
+  bottom: -31%;
+  right: -14%;
+}
+
+.boxText {
+  margin: 50px 7px 70px 0;
+}
+
+@media (max-width: 700px) {
+  .mainContainer {
+    padding: 60px 15px;
+  }
+
+  .topContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 45px 0;
+  }
+
+  .headingContaienr h2 {
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+
+  .boxesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boxContainer {
+    max-width: none;
+    width: 100%;
+  }
+
+  .box {
+    height: 328px;
+    width: 100%;
+  }
+
+  .boxText {
+    margin: 45px 0 45px 0;
+  }
+}

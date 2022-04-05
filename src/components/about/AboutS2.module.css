@@ -1,0 +1,98 @@
+.sectionContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 65px 12.8rem;
+  position: relative;
+}
+
+.image {
+  height: 666px;
+  width: 526px;
+  border-radius: 5px;
+  background-image: url(../../assets/about/S2image.jpg);
+  background-position: bottom;
+  background-size: cover;
+  position: absolute;
+  left: 13%;
+  bottom: 11.6%;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 44.2%;
+  border-radius: 5px;
+  padding: 90px 55px 90px 245px;
+  background-color: #222;
+  color: #f9f9f9;
+}
+
+.textContainer h2 {
+  font-size: 2rem;
+}
+
+.textContainer p {
+  margin-bottom: 10px;
+}
+
+/* Reviews section */
+
+.reviewsContainer {
+  display: flex;
+  text-align: center;
+  padding: 65px 12.8rem;
+}
+
+.reviewsContainer img {
+  height: 200px;
+  width: 200px;
+}
+
+.reviewsContainer h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.reviewsContainer p {
+  padding: 0 6rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    padding: 65px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    left: 0;
+    top: 0;
+    position: relative;
+    border-radius: 0;
+    height: 400px;
+    width: 100%;
+  }
+
+  .textBox {
+    border-radius: 0;
+    padding: 90px 0 90px 0;
+    width: 100%;
+  }
+
+  .textContainer {
+    padding: 0 45px;
+  }
+
+  .reviewsContainer {
+    padding: 65px 15px;
+    flex-direction: column;
+  }
+
+  .reviewsContainer p {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+}
