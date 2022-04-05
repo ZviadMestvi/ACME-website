@@ -1,19 +1,21 @@
 .sectionContainer {
   display: flex;
   justify-content: flex-end;
-  padding: 65px 12.8rem;
+  margin: 0 auto;
+  padding: 65px 15px;
   position: relative;
+  max-width: 1170px;
 }
 
 .image {
-  height: 666px;
-  width: 526px;
+  height: 77%;
+  width: 44%;
   border-radius: 5px;
   background-image: url(../../assets/about/S2image.jpg);
   background-position: bottom;
   background-size: cover;
   position: absolute;
-  left: 13%;
+  left: 1%;
   bottom: 11.6%;
 }
 
@@ -41,7 +43,9 @@
 .reviewsContainer {
   display: flex;
   text-align: center;
-  padding: 65px 12.8rem;
+  margin: 0 auto;
+  padding: 65px 15px;
+  max-width: 1170px;
 }
 
 .reviewsContainer img {
@@ -56,8 +60,8 @@
 }
 
 .reviewsContainer p {
-  padding: 0 6rem;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
+  width: 70%;
 }
 
 @media (max-width: 768px) {

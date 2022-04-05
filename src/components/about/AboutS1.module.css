@@ -1,5 +1,7 @@
 .mainContainer {
-  padding: 65px 12.8rem;
+  margin: 0 auto;
+  padding: 65px 15px;
+  max-width: 1170px;
 }
 
 .textContainer {

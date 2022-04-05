@@ -12,7 +12,9 @@
 }
 
 .heroContent {
-  padding: 0 12.8rem;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1170px;
 }
 
 .heroContent h1 {

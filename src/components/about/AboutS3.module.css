@@ -8,14 +8,18 @@
     url(../../assets/about/S3image.jpg);
   background-position: center;
   background-size: cover;
-  padding: 0 12.8rem;
   color: #f9f9f9;
+}
+
+.sectionContent {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1170px;
 }
 
 .sectionContent h1 {
   margin-top: 20px;
   font-size: 3.875rem; /* 62px */
-  line-height: 1.2;
   width: 40%;
 }
 
